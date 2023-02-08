@@ -1,0 +1,1135 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1160.8,985.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uue="clr-namespace:UiPath.UIAutomationNext.Exceptions;assembly=UiPath.UIAutomationNext" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="54">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Exceptions</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>UiPath.Core.Activities.DateModifications</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="39">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="747.2,920.8" sap2010:WorkflowViewState.IdRef="Sequence_50">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="705.6,828" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="DT_Site" />
+        <Variable x:TypeArguments="sd:DataTable" Name="DT_Produse" />
+        <Variable x:TypeArguments="x:Int32" Name="a">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Int32" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="sd:DataTable" Name="DT_OutputProduse" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <av:Point x:Key="ShapeLocation">260,2.4</av:Point>
+          <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">290,77.6 290,127.6</av:PointCollection>
+          <x:Double x:Key="Width">672.00000000000011</x:Double>
+          <x:Double x:Key="Height">790.80000000000007</x:Double>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID6</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID6">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">190,127.6</av:Point>
+            <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">290,180.4 290,193.6</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+          <ueab:ExcelProcessScopeX.Body>
+            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="560,834.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="518.4,741.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" TemplatePath="D:\Facultate\Master1\Roboti\Examen\Nr 2.xlsx" WorkbookPath="bricolaje.xlsx">
+                  <ueab:ExcelApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,472" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="443.2,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Site-uri&quot;)]" SaveTo="[DT_Site]" />
+                        <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="443.2,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Produse&quot;)]" SaveTo="[DT_Produse]" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelApplicationCard.Body>
+                </ueab:ExcelApplicationCard>
+              </Sequence>
+            </ActivityAction>
+          </ueab:ExcelProcessScopeX.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ueab:ExcelProcessScopeX>
+        <FlowStep.Next>
+          <FlowStep x:Name="__ReferenceID0">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">190,193.6</av:Point>
+                <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">290,246.4 290,296.4</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:BuildDataTable DataTable="[DT_OutputProduse]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Produs&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Descriere&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Pret&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;Pret&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Site&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PretAvantajos&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;Nu&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:BuildDataTable>
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">190,296.4</av:Point>
+                    <av:Size x:Key="ShapeSize">200,68.8</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">290,365.2 290,415.2</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Hornbach" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="reg" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Produse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1223.2,3332.8" sap2010:WorkflowViewState.IdRef="ForEachRow_12">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Produs" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1189.6,3212" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: HORNBACH - magazinul dumneavoastră online de materiale de construcții" sap:VirtualizedContainerService.HintSize="1148,3119.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1114.4,2902.4" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="Pret" />
+                                    <Variable x:TypeArguments="x:String" Name="Site" />
+                                    <Variable x:TypeArguments="x:String" Name="Descriere" />
+                                    <Variable x:TypeArguments="x:String" Name="er" />
+                                    <Variable x:TypeArguments="x:Int32" Default="0" Name="eroare" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1072.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Text="[Produs.Item(0).ToString+&quot;[k(enter)]&quot;]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.hornbach.ro/" DesignTimeRectangle="491, 261, 572, 48" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' aaname='Introduceţi un termen de căutare ...' /&gt;" Guid="510a19e5-5b84-4c35-ad36-67daff54498d" ImageBase64="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" InformativeScreenshot="d6c2fb5dd102fd09142ec82b72c429a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HORNBACH - magazinul dumneavoastră online de materiale de construcții' /&gt;" SearchSteps="FuzzySelector, Image">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="1073, 270, 30, 30" ElementType="Icon" FriendlyName="'Găsire'" FullSelectorArgument="&lt;webctrl idx='2' parentid='hbhd-mount' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='hbhd-mount' tag='svg' aaname='' check:text='Găsire' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFJSURBVFhH7ZXrDYMwDAa7E3OwBnOwBmswB2swR6qrFMm1bMiXlqo/OMkSLXlc7CQ8yp9wi3huEY8ksu972batLMtS5nku67q+fn+DJhEEpmkqwzCkgRjtejkVYcXRxFGM4/jKVg+HIpkEE5KBLEuUTOVQxE8QrZZy8L9th6haplTEr/ZsU5IF256MKaQiPYP6zCiEIn51rWmmne2nHO0mEQVbUuUEhSKUog7GwApWRNknoYitNSdAgfa178cZ8feHgu2n3CehiN90rSm2JSWUuyQUAT/oWZp9FpX9AakIq7H1JiIZ2tk9VUO95lMR8Me4Rv3WRO9qqNf8oQgg4zPTGorMqQhk6bfBe/aJl26VaRKpMCCTkSVKw+Q824l47pGRRFrpkblEBFSZy0Qgksm+yJeKgJXJJOByEUDmSAJ+ItLCLeK5Rd4p5QnrzkLMYiwQswAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <TryCatch DisplayName="Eroare posibila 1-Pret" sap:VirtualizedContainerService.HintSize="1072.8,506.4" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TryCatch.Try>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NGetText DisplayName="Preluare Pret" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Timeout="3" Version="V1">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://www.hornbach.ro/p/adeziv-standard-ceresit-cm9-pentru-gresie-si-faianta-la-interior-25-kg-antracit/8374911/?searchTerm=Ceresit+CM9+25" DesignTimeRectangle="1019, 523, 165, 58" FriendlyName="'32,80 lei *'" FullSelectorArgument="&lt;webctrl aaname='32,80 lei ' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mount' tag='SPAN' type='' /&gt;" Guid="b5a3e7e7-2859-4d86-9aa6-63d6e0fc7227" InformativeScreenshot="eb0652bd22d34a66d600c0274b055d3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adeziv standard Ceresit CM9 pentru gresie și faianță la interior 25 kg antracit - HORNBACH România' /&gt;" SearchSteps="FuzzySelector">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                  <uix:Target Accuracy="1" DesignTimeRectangle="1110, 651, 40, 21" ElementType="Text" FriendlyName="'/ buc.'" FullSelectorArgument="&lt;webctrl aaname=' / buc.' idx='2' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' / buc.' type='' parentid='mount' tag='SPAN' check:text='/ buc.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAZCAYAAABKM8wfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFbSURBVFhH7ZShDsIwEIYbEhQW3CRv0LfgRXA43oAEyUvM4HBIPBgwJBgSBIbsHY6N3o22u7YTLLklkHwk223rd71/U/BS0Cf6J7w/DdiCVJSeZXB88EWJqOVqAscbX5SI2p75glTU/ckXbIp8ClpPYXf1atcxLLQGPR9DYZ/vkBZfiSHs5gEpkcIktR6Fa5KETRw0bA5M3RY+ZJ/r7Gvp3kU+ZI/tcwYmdh4JYYyDzuDC1UnYB3c8JezKEoG1kITwCDbVQ7g4VPiRqBswi6aEL2sjaSZCmxOYJhIXxjEHH9DIMDbYSpgEvzHwr+eICpsdiIzox8JtiAjj4rUMgyhhjENsPKIiYeKQ6N4XpmNWmJr5CrkvXfOYIyCM3cfiUFELeuB9JGwom8/dqbl1gt4Zd1q0Ji+MIrHRfCDh8rNHu+NOxdtVJmaNphr3thEWzF+4a/7CXVP+9+kH8AaX1OlGTud5gAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                  <uix:Target Accuracy="1" DesignTimeRectangle="1184, 553, 40, 21" ElementType="Text" FriendlyName="'/ buc.'" FullSelectorArgument="&lt;webctrl aaname=' / buc.' parentid='mount' tag='SPAN' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aaname=' / buc.' parentid='mount' tag='SPAN' type='' check:text='/ buc.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAZCAYAAABKM8wfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEtSURBVFhH7ZUxDoMwDEV7yR6lF+jKKVh6CkYk2BgQc4dO5RIuFf6QuraJ1EaiVb7kwQmJH/EPHOjHlIFTKwOn1n8CX88nqg8lXTmHxksxjZ+ovdx5JL0igHvqJqj63HO+ap/ATWlC7RJ4tkNBw40HAoXA83Ov1sFY1+g50Z2GI9ZNcaxo5BlLG8BsB2MjAMvAifvAAhahWC+UD3yrqJ02sVoOYMwvL8BFfWA+DHSEa2mXO5QLPAPodnhKAsPvUcAAXLqHE7frPeUA8waOr74LHCcbGBs6ntoVMGBQTNN3gT+yBBb7F0ACI1eBAYhcXrq3XJcBbP/dQi2AIvACAJ6jpOGlaxufNcMyOjC3Fq20BOCuwemIAuJU1+d5XkJra6OAd6wMnFoZOLV+DJjoAaE7E6Kh8hGoAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                          <uix:NGetText.Text>
+                                            <OutArgument x:TypeArguments="x:String">[Pret]</OutArgument>
+                                          </uix:NGetText.Text>
+                                        </uix:NGetText>
+                                      </Sequence>
+                                    </TryCatch.Try>
+                                    <TryCatch.Catches>
+                                      <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="si:IOException">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                                          </ActivityAction.Argument>
+                                        </ActivityAction>
+                                      </Catch>
+                                      <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_11">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                                          </ActivityAction.Argument>
+                                          <TryCatch DisplayName="Eroare posibila 2" sap:VirtualizedContainerService.HintSize="436.8,608" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <TryCatch.Try>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="375.2,353.6" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NClick ClickType="Single" DisplayName="Click primul element" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Timeout="3" Version="V1">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.hornbach.ro/s/ce40%205kg" DesignTimeRectangle="149, 969, 324, 45" ElementType="Text" FriendlyName="'Chit pentru'" FullSelectorArgument="&lt;webctrl aaname='Chit pentru rosturi Ceresit CE 40 Manhattan 5 kg' parentid='mount' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='' parentid='mount' tag='A' type='' /&gt;" Guid="3aa772ce-f3b4-443d-bbe9-24c5af9917df" ImageBase64="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" InformativeScreenshot="59d4414a8987ae380b64e56b9c4bb588.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cauți ce40 5kg? Comandă online pe HORNBACH.ro' /&gt;" SearchSteps="FuzzySelector">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                          <uix:Target DesignTimeRectangle="1317, 537, 99, 23" ElementType="Text" FriendlyName="'Sortare după'" FullSelectorArgument="&lt;webctrl parentid='mount' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mount' tag='LABEL' type='' aaname='Sortare după: ' check:text='Sortare după:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAbCAYAAABhoZFDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKESURBVGhD7ZddkoMgDID3Tp6q3sTpPXbsQTqeojOewQuwgoaEJCD+dJfZ8vA9FCGEfCD1a5omUymTKqdgqpyCqXIKpsopmCoHePWmbRrTNK3pX8rzE4yP1jS33ozQ5ubankfK8Umu0KAXMNyXuO1jVJ//GW+UY4F1A91T70cJ5XAxwIWCPlXOEQI53i7IILJyTOdQ5eSjy7kPa9to+ptSzGe39APYyaICMOa36egYR2cGGCdOLXkWjQl5ktxXtuXj2lwcRY6YR/QZ1jXNv580/zD3INZKzuYM5LiLyw1O7B5RxBUiiCfiSMmJxSSL1GMuRcO8Q1KnnY/pHmfkKCQ2DrAlKHHnSPsWvyjx6lMWpUiGZzSx7SKkYuIJABkiRwU+pxZ/Oy+UE507tRYiUCOUY2GvLL77IDAWlxztjMnleI09MWVfv4YMOT6PnCJmyMH66Zvb4gVG4y5IORbfmU08I4srE4wXUhtPIfeAY48cjXiBRB6/IYff1YfkOOiiZcKXy+GJO/6LHL7pVpT6UBJyLDg5LEIW9wI5RMzSDjH3yMG+OYg83iaHilnaxGstApEjRVh4grK4ewqpjT8bU5EDBSrhzvFj8CQdkEOS8Yti3wJz29l/I6IoZA5o83NkxUyMTyx+u/Cyj/+tyIF6iPqIk0TGJPKzhK81nyAHE472Ibs0Xki6QMuScNhGyROOMkP8blaIjaFz8j7t/C0UnlJycvx30oqQriD6kDrPyDtHBMPjGO1DxFhShQx2jrabXIJ4GnLuMYssJJzMGPQusPNADrRAfJfzPvjc5ok5hDULcrNx+Gs3W05lB6Ecvc9xqpxTVDkFU+V8LFVOwVQ5BVPlFMtkfgDetvePPsQ4wwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                          <uix:Target DesignTimeRectangle="134, 115, 226, 58" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' aaname='Logo Hornbach' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                                          <uix:Target DesignTimeRectangle="947, 421, 195, 63" ElementType="Button" FriendlyName="'Toate filtrele'" FullSelectorArgument="&lt;webctrl aaname='Toate filtrele' parentid='mount' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Toate filtrele' parentid='mount' tag='BUTTON' type='button' check:text='Toate filtrele' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMcAAABDCAYAAAAoJBEIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATrSURBVHhe7duxa9tKHAfw/k+ZMoRM3TS1iyFDvTSUGgoPCs2S6ZEHD9MhJIOzlEJDoU6geCjdAiUvUBwo6A3p5CEgKHgyKWT91YrvTj+d7ifd6SVq/PQdPkPvfneSo/sanaU+uLq6IgAoQjgABCYccRxTt9ullZUVgFZK13+ag0I4EAyARUAK4dCd19fXAK2kM4BwAFgQDgABwgEgQDgABAgHgADhABAgHAAChANAgHAACBAOAAHCASBAOAAECAeAAOEAECAcAAKEA0CAcAAIEA4AQWPhODs7o/39/RvHx8fOGoD7pLFwpKHQc0ZR5KwBuE/0ekU4ACx6vd5JOCaTibG9vW3mdIWD1/qwxwPcNr1ebz0cPAw2Oxzpv111knRuPr5cQsPn7nm03lGS1V+e0uCPDj1cW/StP9qknaOYpj/5nFpMg4jN9WJEienzPO7lkHqOPi13braKsSvPh+Z8xq91e4+Gl3qOMfVNfZ/Gel6tan4919e+o2+dHj/bojdfrPP3/bx8ztfj/Bya87iZ/lfHmAB6HoRjXjs7H1BHhcK2/pIvfGX6mbZ43douW2BtD0fm8d6YZp5zIhyNhoPhF6bwB5/S6KXqW9uhk+mi/eLtE3XciAbfeP3c+S6t6vlu8IXHlB239JwqBIytFQ4mOeqpOseiY4vULO4fMb0xXw7smL7nHBiO0i+RmvTctx4Oe4/Aw2KHw671wcd7K7swsxPa0X2vPtNUt/87oEi1d95d5MYkH9WC2ehQR9U4v63aGI656act0771abpoRziK7sWvVXUWacmY8d7qov1Vn/obi5rND47g1jmuj4CxvyMcznbfc0Y4GlZnkYpjsj1FdDCmkz9Vzd+nrEapc1wfAWMRjnB67jsPB39CnnLVcOlTdF2bjnXVBKuzSMUx2cLqfUwoPlD7pqdDmpgapc5xfQSMxW1VOD33nYcjFN+k+4TJS51FKrVPhrSp2tPFki2E+WZ+pmqq5rD7LIVFaCsZay+WxsMx9diQW3LzBoYjj3/G+vR8CIfUJ7X/oy+MuhDml6sOHX5XNVVz2H2WZQyHi+9Pua0Kh+tXpjJ8rB2OslpvvovUIxyTD5vq/NSiSkamztxCaHWO6yNg7G8Lx1/WHsz3nAPDsVS3VWXPOVzsTToPh+1OnnNIfc72WbYBN3uMbKFFB3E2XpzDo69KwNhmb6vYM6ONQ7rgtb7njHBkliscF3Sofrp14s9JxDk8+qoEjG16z5HVW7eZvueMcGSWKhz8gaFL7jUSYQ6fvioBYxvfkH8/NA9Gn7xnt8G+5/x/Doe9R/DBx/NwNLLnCHlCztr4Qsl+serRKMnaWxkO/lIme8cL4bgFdjhcNcFKL4z/u1U8BNlCmzMXa5V2z1l7K8ORHlO9QcCPiXD8d82Hw/+tXPPAz36mwebPXayy4/I+F/6ta/NdaHPV4SjiIagTjtmXHfNipmn3/bw8HAUqyKU1cxV/kyp6nnsXjjQQWiNPyE1N1f/nSGj0Qs0RDSjmY3+eZouNv0bS0nDkblXnXy43t6oIB8DyQzgABAgHgADhABAgHAAChANAgHAACBAOAAHCASBAOAAECAeAAOEAECAcAAKEA0CAcAAIEA4AAcIBIEA4AARiOLrdrukEaKs0B4VwxHGMgECrpes/zUEhHACQh3AACBAOAKcr+gVihGpHRjhgTQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                                <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[eroare]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                              </Sequence>
+                                            </TryCatch.Try>
+                                            <TryCatch.Catches>
+                                              <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ActivityAction x:TypeArguments="si:IOException">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                                                  </ActivityAction.Argument>
+                                                </ActivityAction>
+                                              </Catch>
+                                              <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_13">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="304,156" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Assign sap:VirtualizedContainerService.HintSize="262.4,61.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:Int32">[eroare]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:Int32">2</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </Catch>
+                                            </TryCatch.Catches>
+                                            <TryCatch.Finally>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="200,85.6" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Sequence>
+                                            </TryCatch.Finally>
+                                          </TryCatch>
+                                        </ActivityAction>
+                                      </Catch>
+                                    </TryCatch.Catches>
+                                    <TryCatch.Finally>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="200,85.6" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </TryCatch.Finally>
+                                  </TryCatch>
+                                  <If Condition="[eroare=0]" sap:VirtualizedContainerService.HintSize="1072.8,1877.6" sap2010:WorkflowViewState.IdRef="If_8">
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="416.8,1004.8" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="375.2,910.4" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:Matches BuilderPattern="\d{0,2}(\,\d{1,2})?" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[pret]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;\\d{0,2}(\\,\\d{1,2})?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d{0,2}(\,\d{1,2})?" RegexOption="IgnoreCase, Compiled" Result="[reg]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_42">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[Pret]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[reg(0).tostring]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_43">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[pret]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[pret.Replace(",",".")]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <uix:NGetUrl CurrentUrl="[Site]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="333.6,87.2" sap2010:WorkflowViewState.IdRef="NGetUrl_7" Version="V1" />
+                                          <uix:NGetText DisplayName="Get Text 'Contul meu'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                                            <uix:NGetText.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.hornbach.ro/p/adeziv-ceresit-cm11-plus-pentru-gresie-si-faianta-interior-si-exterior-5-kg/8564496/" DesignTimeRectangle="1009, 403, 588, 60" FriendlyName="'Adeziv Ceresit'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="6fbe61b6-8676-4cc4-bea1-2cd04eda8821" InformativeScreenshot="7a882d49e2a45fee71915ab255a6974a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adeziv Ceresit CM11 Plus pentru gresie și faianță interior și exterior 5 kg - HORNBACH România' /&gt;" SearchSteps="FuzzySelector">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="1144, 190, 157, 68" ElementType="Text" FriendlyName="'Contul meu'" FullSelectorArgument="&lt;webctrl aaname='                 Contul meu ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Contul meu ' tag='A' type='' check:text='Contul meu' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAABICAYAAACeGpX8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPOSURBVHhe7ZnBcaswFEV/oS4iTaSI7DPepQcnPZAOWGXNms8TekgCgRWD/Yg5d+ZMbCGEECcS4H+n06kFsAQJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMAcJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzDGV8OPjo/36+spug+NgIqHIJ381cRkcj4dL+P39PYin0c8/Pz9JXTgGD5VQZjuNCKeJPzMjHo+HShjLNheZKXP7wvPyMAlfXl68ZssRUaVuro1f81n7Vn2aqj2X1Gvr9pLUuXQlfZrqPJRftLC+JHVyqT/j4zRt9e7bfq+6b31cna7sXA0lo37MELUh0XYcyblpewt9deeS1gnnfG5D17Teeh4mYcksqJG6uTZ+Q7iQo4xEnK0XixJftGj/vUqY/UdxObiEssyKXCWsX5IzgxXNCGGmyA1qbvDTi6b7pxJqmwsSPUjC0J/o/FymEsbCpjyhhK+vr46lpVa2ab3c9nKWRVouWxbTxZfvT8KmbeTDMFv7fneF/faDS6ivZpZeTss2yfqZMDeApWUFEnbf5GLuT8K6rd0hfPv+eE1XqNuRsMuSYCWillEyyMKtEnabOmH2KOHFH0Pa0nbqKtru9jmohPqOUO755pZkzdvbW3Z7OfeTcLig3ZJXDYU7ktB/lvPp/0lCWWgvnE+S5DyeUEIRT0XMzXS6bf1SLNxRwk/d7u+/JHuSUPvadEuzFMr9IRIGRERN/MuIPIho1j+UCLkBzFE60KFevMwN2ZWEUf8l0rcFCefH50klFGSp1egrGc36ZVjJDWBp2XUJY3FcdiVh+m7QnRcSTpEZUR9CJCLiNjOgUipc6UCHer0omdnG1euxljAcx7d5dAn1XlDuA8cz3fgBReuKoFL/djEzg5W52NeEy8k6FaVLqYRRH7TtUDeIuVrCa9+LJIzGRt87Zvq/BXeTUITS935x9BcRFTIWLxdpYyxrCYkkSdILO18vmq0yEsZlxRKOZ9A40c+BpX0fmJNsIs9UwmnCMcrGZj13kTB+0NgiIm78IFNMtCz1mbmIV+vlJLzhPaEnvmdzmd1/nJn+TyTzsmu7N0roKB3DFWwu4dYCara/b4S9sLmEuSV4q9w0G8Lu+VMSStu5Y8LfBgnBnM0llKdekeUebPcyG/bE5hIC/BYkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMAcJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMObU/gf71dBqkbfhgQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NGetText.Target>
+                                            <uix:NGetText.Text>
+                                              <OutArgument x:TypeArguments="x:String">[Descriere]</OutArgument>
+                                            </uix:NGetText.Text>
+                                          </uix:NGetText>
+                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Produs.Item(0),Descriere,Pret,&quot;Hornbach&quot;,Site}]" DataTable="[DT_OutputProduse]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_8" />
+                                        </Sequence>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="612,1716.8" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="570.4,1622.4" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                                          <ui:IfElseIf.ConditionBlocks>
+                                            <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                              <ui:IfElseIfBlock BlockType="If" Condition="[eroare=1]">
+                                                <ui:IfElseIfBlock.Then>
+                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,1427.2" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="478.4,1334.4" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,388.8" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                                                        <TryCatch.Try>
+                                                          <uix:NGetText DisplayName="Get Text '/ buc.'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Timeout="3" Version="V1">
+                                                            <uix:NGetText.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://www.hornbach.ro/p/adeziv-ceresit-cm11-plus-pentru-gresie-si-faianta-interior-si-exterior-25-kg/8374910/" DesignTimeRectangle="1010, 579, 169, 58" FriendlyName="'49,00 lei *'" FullSelectorArgument="&lt;webctrl aaname='49,00 lei ' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mount' tag='SPAN' type='' /&gt;" Guid="d4d63d46-6cae-47a8-b3c9-4c0bfc02dab2" InformativeScreenshot="32cd6d829b63c897ac307bcf4165b36f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adeziv Ceresit CM11 Plus pentru gresie și faianță interior și exterior 25 kg - HORNBACH România' /&gt;" SearchSteps="FuzzySelector">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                                    <uix:Target DesignTimeRectangle="1179, 609, 40, 21" ElementType="Text" FriendlyName="'/ buc.'" FullSelectorArgument="&lt;webctrl aaname=' / buc.' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' / buc.' parentid='mount' tag='SPAN' type='' check:text='/ buc.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAZCAYAAABKM8wfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAErSURBVFhH7ZW7DYMwEEBZklGyAC1T0DAFJRJ0FIiaggqWuOD4jtiHzyAFSybiSS7sgP3uY5LAzXiEQ/MIh+Y/hZcyhzrJYZhwgZgqaJMX1GkFCy6F5oTwDEMqSEUpTFJZjwsGMQrrdnhB1+CCiSncFJ/nrGd5QK4AjffEcwwOhLEdkgJGXLEgAT4kQT5nsno47orBgXAPndrE1Q4KSYgCPBCm6rXlrH6FMVPvfucu/MKYAbFMXIgCPClMgtv+lHEpQSteYb2h0A6Kq4VP4BHGwzcZB1EJY3l8/XS58C8toTfz31hRSBAmQZov7NLxuQtB2PPvZrIJsrELQI+2rOw2O/is7Sqw4hbGg7ztoCChtYRb9lhV7Kw67gWTNuXOC0fMIxyaRzg0NxMGeAOaERH1Nw/SHgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                                    <uix:Target DesignTimeRectangle="1145, 246, 157, 68" ElementType="Text" FriendlyName="'Contul meu'" FullSelectorArgument="&lt;webctrl aaname='                 Contul meu ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Contul meu ' tag='A' type='' check:text='Contul meu' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAABICAYAAACeGpX8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPOSURBVHhe7ZnBcaswFEV/oS4iTaSI7DPepQcnPZAOWGXNms8TekgCgRWD/Yg5d+ZMbCGEECcS4H+n06kFsAQJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMAcJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzDGV8OPjo/36+spug+NgIqHIJ381cRkcj4dL+P39PYin0c8/Pz9JXTgGD5VQZjuNCKeJPzMjHo+HShjLNheZKXP7wvPyMAlfXl68ZssRUaVuro1f81n7Vn2aqj2X1Gvr9pLUuXQlfZrqPJRftLC+JHVyqT/j4zRt9e7bfq+6b31cna7sXA0lo37MELUh0XYcyblpewt9deeS1gnnfG5D17Teeh4mYcksqJG6uTZ+Q7iQo4xEnK0XixJftGj/vUqY/UdxObiEssyKXCWsX5IzgxXNCGGmyA1qbvDTi6b7pxJqmwsSPUjC0J/o/FymEsbCpjyhhK+vr46lpVa2ab3c9nKWRVouWxbTxZfvT8KmbeTDMFv7fneF/faDS6ivZpZeTss2yfqZMDeApWUFEnbf5GLuT8K6rd0hfPv+eE1XqNuRsMuSYCWillEyyMKtEnabOmH2KOHFH0Pa0nbqKtru9jmohPqOUO755pZkzdvbW3Z7OfeTcLig3ZJXDYU7ktB/lvPp/0lCWWgvnE+S5DyeUEIRT0XMzXS6bf1SLNxRwk/d7u+/JHuSUPvadEuzFMr9IRIGRERN/MuIPIho1j+UCLkBzFE60KFevMwN2ZWEUf8l0rcFCefH50klFGSp1egrGc36ZVjJDWBp2XUJY3FcdiVh+m7QnRcSTpEZUR9CJCLiNjOgUipc6UCHer0omdnG1euxljAcx7d5dAn1XlDuA8cz3fgBReuKoFL/djEzg5W52NeEy8k6FaVLqYRRH7TtUDeIuVrCa9+LJIzGRt87Zvq/BXeTUITS935x9BcRFTIWLxdpYyxrCYkkSdILO18vmq0yEsZlxRKOZ9A40c+BpX0fmJNsIs9UwmnCMcrGZj13kTB+0NgiIm78IFNMtCz1mbmIV+vlJLzhPaEnvmdzmd1/nJn+TyTzsmu7N0roKB3DFWwu4dYCara/b4S9sLmEuSV4q9w0G8Lu+VMSStu5Y8LfBgnBnM0llKdekeUebPcyG/bE5hIC/BYkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMAcJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMObU/gf71dBqkbfhgQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                                    <uix:Target DesignTimeRectangle="1103, 707, 40, 21" ElementType="Text" FriendlyName="'/ buc.'" FullSelectorArgument="&lt;webctrl aaname=' / buc.' idx='2' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' / buc.' type='' parentid='mount' tag='SPAN' check:text='/ buc.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAZCAYAAABKM8wfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFWSURBVFhH7ZUxrsIwDIazMLEhxo7cIIdi4xAsjGycgAP0BixMbCxILEhveHoSYnoXMEHN36auHTpQyZVA+pASN8nX2Ekd3R2NifEJn65ywCrOL+f0+ycHLeLWuxndfuSgRdzxJges4v6FTs5548n7gs6s/7FfhH5Pq/2k1T8kPW6JKW2DlN9MOzGbwodClTIpXJXDgspLN5YKV8+1Swd924PcpvuEyiXGBcKN9YhjNd4Ix3JQJoIwBzueF2ayQCi9lLzwZU6rMImWcl4S9QvERfPCcTOQkbiWdLhTssKVgFwOTTx5oVjvvYQhWGcPO66v9yIjHCfI1NVnhfuhC2PCTE2ZEoYMFpMwVBIYnD8AXBhtURiCaPND12nLKML61y2lFmTgBSBcUVDZytqba00pGVk4phap1GjKBrvDFmC72jyPOZi0NLaXsGG+wkPzFR6a8D+mH9ETgRrrAEMwwvIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NGetText.Target>
+                                                            <uix:NGetText.Text>
+                                                              <OutArgument x:TypeArguments="x:String">[Pret]</OutArgument>
+                                                            </uix:NGetText.Text>
+                                                          </uix:NGetText>
+                                                        </TryCatch.Try>
+                                                        <TryCatch.Catches>
+                                                          <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_14">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                                                              <ActivityAction.Argument>
+                                                                <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                                                              </ActivityAction.Argument>
+                                                              <uix:NGetText DisplayName="Get Text '/ buc.'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                                                                <uix:NGetText.Target>
+                                                                  <uix:TargetAnchorable BrowserURL="https://www.hornbach.ro/p/chit-pentru-rosturi-ceresit-ce-40-manhattan-5-kg/5882753/" DesignTimeRectangle="1010, 549, 170, 58" FriendlyName="'53,20 lei *'" FullSelectorArgument="&lt;webctrl aaname='53,20 lei ' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mount' tag='SPAN' type='' /&gt;" Guid="ca7b8337-82c5-4360-be1a-e77433f402e2" InformativeScreenshot="d33d53318e4408c5d4409340d059e59b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Chit pentru rosturi Ceresit CE 40 Manhattan 5 kg - HORNBACH România' /&gt;" SearchSteps="FuzzySelector">
+                                                                    <uix:TargetAnchorable.Anchors>
+                                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                                        <uix:Target DesignTimeRectangle="1180, 579, 40, 21" ElementType="Text" FriendlyName="'/ buc.'" FullSelectorArgument="&lt;webctrl aaname=' / buc.' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' / buc.' parentid='mount' tag='SPAN' type='' check:text='/ buc.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAZCAYAAABKM8wfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEzSURBVFhH7ZQ7DoMwDIa5ZI/SC7Byii49BWMlujFUzB2Y2ku4ifKbh+U4VIIKqvySJWzy+Bw7KehgysBbKwNvrX8EflBbnOlWPuCPepYu7v61DQI/UBq4uUShdgkcoCrqegQm2iEw2uFU0xuRqUbgF3Wn8D2OxdziQk/V9+IYTGk7KRsY7XC/vhCYi4GlhRNPAQtYWGwvlgn8vlZuEb0dvGRLsB82TQD3Nd29zxXB4cSqyTKAUWZjAQkcElwIzIBDG8jxuuLAOAGrROsCL1MUmDe3XoAdAfOtt8uzLrAcr0sH5guRyF4Cs68BczIDkLx00o9IB0b2Vjt4MaC0MI+BYWUtqib+w4Y7E0lABQ4gdmm8wjj37DVY3NukKvNT1dpMJjWp6DfAe1YG3loZeGsdDJjoAx3wDxzjwn+YAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                                        <uix:Target DesignTimeRectangle="1010, 650, 588, 23" ElementType="Text" FriendlyName="'Conţinut'" FullSelectorArgument="&lt;webctrl aaname='Conţinut' parentid='mount' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Conţinut' parentid='mount' tag='SPAN' type='' check:text='Conţinut' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlAAAAAbCAYAAACz4rHDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIGSURBVHhe7dxRTqtAGIDRuyfWZbdC3AmuxHQZJu5hLlAYBoZgB6lt9ZxkHkQEfPvyM+FfAACgiIACACgkoAAACgkoAIBCAgoAoNCDBdRnaF6qUFVVqN+HQwAADyYPqPe6D5i4Xpo2a27hHOr+HqfQfAyHbhlQH0049fer2zsDAOw3C6jPt9MUTum6SUStBdQNCSgA4CBJQE3Tn+p1SIxkGnX8KzUBBQA8pySgxqCpwultnDetHesksTWsWWAtYuX8Op43xMvyNWG3+mjLX+HFqVj/++l5YuS14jlxUjad111nbbI2/38AAK63K6CmIJqvGFFJQDWLeOmvsyugmkW0TZMrAQUA/KQvAmrNPE76I2NQjVOhGFDtGqImOydeZ3sTeRo/l+fK7/9VQPW8wgMADlIeUCshMk2JlgE1xdG3A2ojjgQUAPCTjg2oMWAEFADwiwkoAIBC5ZvIBRQA8McdG1D2QAEAf0ASUFO85CGUhMhKnGRxdOeAij8n5wgoAOAoSUDNw2O+5tERY2ix8li5JqDS4/sCKvuuVPLNqPyZLmtznxcAwIZZQPWyj1yuT2yWERVDpXNVQLXSe30noJK/u5yXX6eTBqKAAgD2ygMKAIBN9w2ocVKVTqUAAB6cgAIAKHT3V3jd3ij7kQCAZ3LngDqHOm4OBwB4DjaRAwAUElAAAEVC+A9zW3vSiZ7WkgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                                      </scg:List>
+                                                                    </uix:TargetAnchorable.Anchors>
+                                                                  </uix:TargetAnchorable>
+                                                                </uix:NGetText.Target>
+                                                                <uix:NGetText.Text>
+                                                                  <OutArgument x:TypeArguments="x:String">[Pret]</OutArgument>
+                                                                </uix:NGetText.Text>
+                                                              </uix:NGetText>
+                                                            </ActivityAction>
+                                                          </Catch>
+                                                        </TryCatch.Catches>
+                                                      </TryCatch>
+                                                      <ui:Matches BuilderPattern="\d{0,2}(\,\d{1,2})?" sap:VirtualizedContainerService.HintSize="436.8,60" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[pret]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;\\d{0,2}(\\,\\d{1,2})?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d{0,2}(\,\d{1,2})?" RegexOption="IgnoreCase, Compiled" Result="[reg]" />
+                                                      <Assign sap:VirtualizedContainerService.HintSize="436.8,60" sap2010:WorkflowViewState.IdRef="Assign_44">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[Pret]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[reg(0).tostring]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="436.8,60" sap2010:WorkflowViewState.IdRef="Assign_45">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[pret]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[pret.Replace(",",".")]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <uix:NGetUrl CurrentUrl="[Site]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="436.8,87.2" sap2010:WorkflowViewState.IdRef="NGetUrl_9" Version="V1" />
+                                                      <uix:NGetText DisplayName="Get Text 'Contul meu'" sap:VirtualizedContainerService.HintSize="436.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                                                        <uix:NGetText.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://www.hornbach.ro/p/adeziv-ceresit-cm11-plus-pentru-gresie-si-faianta-interior-si-exterior-5-kg/8564496/" DesignTimeRectangle="1009, 403, 588, 60" FriendlyName="'Adeziv Ceresit'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="6fbe61b6-8676-4cc4-bea1-2cd04eda8821" InformativeScreenshot="7a882d49e2a45fee71915ab255a6974a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adeziv Ceresit CM11 Plus pentru gresie și faianță interior și exterior 5 kg - HORNBACH România' /&gt;" SearchSteps="FuzzySelector">
+                                                            <uix:TargetAnchorable.Anchors>
+                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                <uix:Target DesignTimeRectangle="1144, 190, 157, 68" ElementType="Text" FriendlyName="'Contul meu'" FullSelectorArgument="&lt;webctrl aaname='                 Contul meu ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Contul meu ' tag='A' type='' check:text='Contul meu' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAABICAYAAACeGpX8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPOSURBVHhe7ZnBcaswFEV/oS4iTaSI7DPepQcnPZAOWGXNms8TekgCgRWD/Yg5d+ZMbCGEECcS4H+n06kFsAQJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMAcJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzDGV8OPjo/36+spug+NgIqHIJ381cRkcj4dL+P39PYin0c8/Pz9JXTgGD5VQZjuNCKeJPzMjHo+HShjLNheZKXP7wvPyMAlfXl68ZssRUaVuro1f81n7Vn2aqj2X1Gvr9pLUuXQlfZrqPJRftLC+JHVyqT/j4zRt9e7bfq+6b31cna7sXA0lo37MELUh0XYcyblpewt9deeS1gnnfG5D17Teeh4mYcksqJG6uTZ+Q7iQo4xEnK0XixJftGj/vUqY/UdxObiEssyKXCWsX5IzgxXNCGGmyA1qbvDTi6b7pxJqmwsSPUjC0J/o/FymEsbCpjyhhK+vr46lpVa2ab3c9nKWRVouWxbTxZfvT8KmbeTDMFv7fneF/faDS6ivZpZeTss2yfqZMDeApWUFEnbf5GLuT8K6rd0hfPv+eE1XqNuRsMuSYCWillEyyMKtEnabOmH2KOHFH0Pa0nbqKtru9jmohPqOUO755pZkzdvbW3Z7OfeTcLig3ZJXDYU7ktB/lvPp/0lCWWgvnE+S5DyeUEIRT0XMzXS6bf1SLNxRwk/d7u+/JHuSUPvadEuzFMr9IRIGRERN/MuIPIho1j+UCLkBzFE60KFevMwN2ZWEUf8l0rcFCefH50klFGSp1egrGc36ZVjJDWBp2XUJY3FcdiVh+m7QnRcSTpEZUR9CJCLiNjOgUipc6UCHer0omdnG1euxljAcx7d5dAn1XlDuA8cz3fgBReuKoFL/djEzg5W52NeEy8k6FaVLqYRRH7TtUDeIuVrCa9+LJIzGRt87Zvq/BXeTUITS935x9BcRFTIWLxdpYyxrCYkkSdILO18vmq0yEsZlxRKOZ9A40c+BpX0fmJNsIs9UwmnCMcrGZj13kTB+0NgiIm78IFNMtCz1mbmIV+vlJLzhPaEnvmdzmd1/nJn+TyTzsmu7N0roKB3DFWwu4dYCara/b4S9sLmEuSV4q9w0G8Lu+VMSStu5Y8LfBgnBnM0llKdekeUebPcyG/bE5hIC/BYkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMAcJwRwkBHOQEMxBQjAHCcEcJARzkBDMQUIwBwnBHCQEc5AQzEFCMObU/gf71dBqkbfhgQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                              </scg:List>
+                                                            </uix:TargetAnchorable.Anchors>
+                                                          </uix:TargetAnchorable>
+                                                        </uix:NGetText.Target>
+                                                        <uix:NGetText.Text>
+                                                          <OutArgument x:TypeArguments="x:String">[Descriere]</OutArgument>
+                                                        </uix:NGetText.Text>
+                                                      </uix:NGetText>
+                                                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Produs.Item(0),Descriere,Pret,&quot;Hornbach&quot;,Site}]" DataTable="[DT_OutputProduse]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="436.8,188" sap2010:WorkflowViewState.IdRef="AddDataRow_10" />
+                                                    </Sequence>
+                                                  </Sequence>
+                                                </ui:IfElseIfBlock.Then>
+                                              </ui:IfElseIfBlock>
+                                            </sc:BindingList>
+                                          </ui:IfElseIf.ConditionBlocks>
+                                        </ui:IfElseIf>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1072.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Produs.item(0).ToString+&quot; &quot;+Pret]" />
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="1515, 60, 1750, 1460" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC9SURBVDhPpVHBEYMwDMsy3SW78OTXkboB0xmk2MQRNG2vDx22bOkcUbbytIAti9nrYbbW1qMG6tr7YyfPToOvxDJDTQMsZRKL7CfimJV/xM3AyUEs7xxmSQzQgAuRwQ9iYMxATmWtV/lOoLxLP5aHGXpHN8iCXN8Y8wsD8H5Rz8AHrOVJ5NDLLkxaBhPxjAfKrdh7ch/MWwbiehFmXrLhBbrEHgYOnWeTloEPcWIYkJ+ZgD/q8zeqODA3qbYDFQaR/D9KnCcAAAAASUVORK5CYII=" InformativeScreenshot="849f966bcd2f45f8ed855b19f65b2501.png" Selector="&lt;html app='chrome.exe' title='HORNBACH - magazinul dumneavoastră online de materiale de construcții'/&gt;" Url="https://www.hornbach.ro/" />
+                            </uix:NApplicationCard.TargetApp>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">190,415.2</av:Point>
+                        <av:Size x:Key="ShapeSize">200,68.8</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">290,484 290,504.4</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Dedeman" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Produse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662.4,2312" sap2010:WorkflowViewState.IdRef="ForEachRow_11">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Produs" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628.8,2191.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Dedeman Magazin Online - Dedicat planurilor tale" sap:VirtualizedContainerService.HintSize="587.2,2098.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1881.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="Pret" />
+                                        <Variable x:TypeArguments="x:String" Name="Site" />
+                                        <Variable x:TypeArguments="x:String" Name="Descriere" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="512,255.2" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Text="[Produs.Item(0).ToString+&quot;[k(enter)]&quot;]" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.dedeman.ro/ro" DesignTimeRectangle="404, 150, 961, 50" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' aaname='' /&gt;" Guid="a4d6a50f-614f-467c-a52b-caa39a9a3121" ImageBase64="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" InformativeScreenshot="a7e5480aca59bd2aa42f2810f08c3a59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dedeman Magazin Online - Dedicat planurilor tale' /&gt;" SearchSteps="FuzzySelector, Image">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="116, 117, 238, 79" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' aaname='Dedeman' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                        <uix:NTypeInto.VerifyOptions>
+                                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          </uix:VerifyExecutionTypeIntoOptions>
+                                        </uix:NTypeInto.VerifyOptions>
+                                      </uix:NTypeInto>
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="512,1492" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                        <TryCatch.Try>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="475.2,1237.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'Ordoneaza dupa'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://www.dedeman.ro/ro/catalogsearch/result/v2?q=televizor&amp;search_c=a%201%20televizor&amp;oq=televi&amp;for_ga=true&amp;per_page=36&amp;page=1&amp;order=score&amp;category=1194&amp;fromSuggestion=true" DesignTimeRectangle="530, 885, 229, 14" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' isleaf='1' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='app' tag='DIV' aaname='' /&gt;" Guid="d3ed0495-f7a9-448a-99ab-9767148a570d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOkAAAASCAYAAAC+Yvk5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABJSURBVHhe7dMxAQAADMOg+Tfd2cgBHrgBaZJCnKQQJynESQpxkkKcpBAnKcRJCnGSQpykECcpxEkKcZJCnKQQJynESQpxkkLa9itASkhAxSvKAAAAAElFTkSuQmCC" InformativeScreenshot="51397c279a865689211f581550d20f69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dedeman Rezultate cautare pentru: televizor - Dedicat planurilor tale' /&gt;" SearchSteps="FuzzySelector">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                      <uix:Target DesignTimeRectangle="530, 557, 124, 20" ElementType="Text" FriendlyName="'Ordoneaza dupa'" FullSelectorArgument="&lt;webctrl aaname='Ordoneaza dupa' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Ordoneaza dupa' tag='SPAN' type='' check:text='Ordoneaza dupa' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAAAYCAYAAAAyC/XlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAU2SURBVGhD7VjPSyNJFN7/qU8NQkAQPOQSPRgQjIcdFyYgxIXRvexASGBQDxpYDCyZBeOwJIfFgCgDIktymChCFElgCCIEB8RAk4DM9dtX1a+rutMxcTI/cEkfPki/elX13quv3nuVnx4ePiPA+CIgwJgjIMCYIyDAmCMgwJgjIMCY4wcS4AzrhgHDiKNw0298jPBhg+JAsXhZRKvf+A+EnwDdW1SLG0hEQraRhompuRWsly5x1+3R/SIEBFB4tgToXqOwbPLBEyZnMTPJvwnmchHNkUkQEEDhuRKg+S5mGzYRR/7iXsnvLvYQn7BJkChp+ZchIIDC8yRAA/l5+5Cjuw2PkkDtj3CP0XygyyW02pfILU/BpO/1DzynVcEOy8zpOHYqJT8BuveoFdN44ZQbyjiJzRLqbR4X4GDFiw3USTc2bWeo0EIahauO1iPcXRSRWrT3NIwQZhJZlFuutawGDjNrej+ps4Hjj46OQ9JeODbfo/oujcScsweVx8U15E8HX4pWJYu4tJv0l8mmUi8BblF4ae+l4ifmFeO23uYZy9i+cBa15hFSC7YfocgKcueuWAz1U0MTwDpBSip7jVCosNHGBqpSpm90nI1XgepeYifCsokpROdnESLnTZlFnGB2UM3M8jwycD6qy02EHHRKjXNbJmh+r54IBOtZp9uYkXpRrL7ZxlZyifYU32kcO4TqEskXRMCWSGcDqxxAoVO2hM4ZcrR+lKHt2UZVjndwnCQ7pqNIJLeRYoIbRgz5PsGVuMjadhHEvKg4FOkLyUYlgIyl6M1oPb4QxsQaDj/x3KF+amgC3BQRl4s/QgDnIHwEIMcWt1H+eA+r3YElDoQOww7MCvadG9jYQ0zKmAB3R1iV32FsnbJO9wxbYXvN1QO+VWrfGHJXrPephISULaHQFLJ7HL6y57lLlJO14v/cKtmD5bop3Qr7EMbOBcsctGlM2jJL8XDfLnfWoZ7pZ3tfZW8Pqhk+oF8pUzJZ67tcakcmAPn097Ut48OWshH8/AYZwPTpK8M9NU5nDEkAH6FsVDeFjEiVYaf76ulA2Hvr736IFzkw7Qb2RWpUKVzD44Nqhk2ay4GW8luURQmQGc07X+3hgT5Yz7jj08gEiCLf0HpOzJTeU/0kfH0PoFK6xnchQN+1/ARI/FVB+V8vqk1xG3SQRcbal2NvOZN4A1PL2qXJfHWEO7UnlaxNjkHkNfLvxXzqazhm34MA9d2orecjgPcmewnwdD8FXAQY8Ao4zXL6dqfYxwmgSoC7/n5tCRhIAF0CYr3k7XJZ8s0htE/we4/Mov1kzY4QMd3NaL/DpPSbG0gAXQLM5Akslg0qAcp+V2rvVwL66dkl4Gl+OvAQwPc/QA9CVMf0/wADCOBuAqmzFw3V1CQ3Pi5956Y9qQkcSABXEyg6berM1zPU/PxC+xKZ7f2uVaDMORp/s4aYsImft3Kdm5J67sqGTTWEr3HY6qCc5thMLiGVScvOXjRjQvYYAdxNYChCa1FaDvEct08qw3IsRHPnrN2PAGo9XxP4BD8d2wheAgiIpxk9U4b/EziAAALimcJPMvEMzJ1T/ZQBdOt3UHfvNeAZOIwAAtYVpeSEqz7Tei9+20ONO1/rip6J3BGb0zGkDq7RKq3odZy9fGCbXU9baeufFJPzLML0/SgBCM0D5/kqnoFvUaN1UuJA3D5R3S4kY2x7CLFkEXWKocySPgJQPN9rX3qfxEP9dPYk+AkQ4BljyKUbAQEB/lcICDDmCAgw5ggIEOAbIyDAWOMz/gOredPFMF7gkAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                      <uix:Target DesignTimeRectangle="1329, 557, 61, 20" ElementType="Text" FriendlyName="'Produse'" FullSelectorArgument="&lt;webctrl aaname='Produse' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Produse' tag='SPAN' type='' check:text='Produse' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEEAAAAYCAYAAACldpB6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL1SURBVFhH7VVNaxpRFO1/cjUgDAhCFm5MFgqBTFYWMhDQQk02XQSFErtQoRgIbvKxcBZFodRNWkJcpJVAGopCEBEGAxJBIki2p/fNe29mjNZUsEXILM5i7rvvvnPP3I9Xo9EjXjo8EQieCARPBIInAsETgbAkItSx7/PB59NR6kw7/7cYF+EyQ0QYGQdqOIaUcYPe0OW3cCylCCpW16OIrii2GKv5OgZu34ViKUXI4LuwmZ8S3ObP2bbFY8lFGHUM6IJg2WQ2QXi7ArN/g+J2EAp9719K/xoK8SiCfnZHQXBzB8Va13mDwSQfcU9Z0VGoVSZEMA2dc/lQd+7ZXFz8WKz4GlTLzts3ma+iNRDnwy4uPiawGuDnyopG7d0cq+pnRWidCjKhA1xbNuev6Vs8sE2+U4FuJc8eo3aK8ESZGMnP9/yN4Q0KYXHPH0R0nSWgQLHuzStCG8cbPJb6Oo3s+x1orIXfVNCzzrsob/OWts7zGSQj/Fs7atpxZ84EqR5LQjfawk+KQIlu5nBxe49B/wEDGpzXByHuTyRMMUjtdpIi/sgJYRKisgjNE2iWbV4R6siKiktW2hYH5jeQVfDzACH5thzsdxXEmc3V3n8QQUKU87m7nKUIitMCFrooicrQDZf/k3ayk9syYNp3J2fC37ZD41QTohICGpKH39DoPYkxFU6M52fCBCYJc/wHEahiopbfOL9Bq4bjvZg9F3xh/uftGOsZlM9ruBhDU7TMQkWYsx38aZz1xd1Z7bBxgoaI1TjSuM3Fzy59hl4V79xxZDu435pyb6EijO6qSM4zGANrNBhpkwRoMD6NeSUSIKhhEcsv/SQ/xoVaNpJAKp9DSmwcX4jOrSSdwcjeiu/lkN1LIBpWxypssSIw0Moq7mqzV2SritSmsyKLV7TG0oysO+YDGkYamhjO6kYapV9tfHnr5tdGeTfmGuA00OMZnN3KGAS2Ig/F1rB8uGj7Xx1O4yK8UHgiEDwRCJ4IBE8EgifC6BG/ATmGTIEF+W81AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                      <uix:Target DesignTimeRectangle="560, 1169, 111, 19" ElementType="Text" FriendlyName="'Disponibil online'" FullSelectorArgument="&lt;webctrl aaname='Disponibil online' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Disponibil online' tag='SPAN' type='' check:text='Disponibil online' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAAXCAYAAAA4JnCqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARuSURBVGhD7Vj/ZyNbFH//WAghlLDkh0cJSylLfqj+EPlh7Q9VlXar7VgjalO12a5U40n6SK3mpaJLpKsma2vsD2OtWE+sZSgplR/q8869c2cyM518aV6yW2M+DLnn3jn3nPM5c+65+QMBfIOATB8hINNHCMj0EQIyfYSATB9hAjLbqLyKIrJfQ1dIfjc67xcRybzA+TUfoSKHEZLL0PnsffSUl5hbi+NQE4JPEkJrYcifxHjqcNl0ewE5E0bi2DRgOnCQqRZoQ3LKejJxLO3tQfkhFnB0UM1GMbf/4dGQqZ8lOZnNccm8kpDIzP9GMlvIbUWx8PfMyVzG4eUFFPbU97CyEyVZnBx9LNSNggjc6wdUjl9N5ozgQaYEVYw57tooSSTfJPktE7gMu+tCPV6mTGfvhhHZmMfzv1pGIHmQVtHUatiWWFKEMSetoqLZwnynQyma70fxxD3PdGQk0lG2dEQ2ksgr/bDop0mSJ1HpsJGwr1CDdpzEE6Y3E0OqeAH9ji+/T94oMm80VN4+NXSRjYndLJSfYo7A98+WoSlZpDa8/HST2YJMa0KFFh+N4yODbtPvNT+aTEL3PM2dyF2xkdOw3sdVRNZi2D7ToF+3odUPkGu02UIRJDpfd16g1KAvvXGE9S1610qMHtRinBxZRK7OqkENpX0arz1F6RvXYAWarcnzNSfI0Zkdss7IAWRmolgqnvAK0yxRGSYdqVO+4IFkGsdKaEv4YO1PSXpjrDD2pwC7/dzaow6DYQwy2XiIj/xooAq5fqryOKvcpzjyX4x5hrHINDczguE0jJ1XISJTvvQoauK97WZPCAgkY4HlsusaVuj3gr0RuP2AbfoCIi5Hn9dtWUgNTD+5BpC5cyACyaCjumuTCZ1jkfkliz9pbr1h8699hGckM5PD2D+GvC1wrCljNlX5FzwemYN97OL8tf19BqqYOxSnotBB+N9k4kZFnmURzc9JaTpvO+gNKmcMnTJSpi7KNkasrIg5Dpd+roMCZctAt15PMh2Ou3xz2+Vlp4CRrIuo/CsEHE4yjP3T1lfEMNwmLzKH+UgNkzjG7j2mDsJ4Zba+THLvMmtC/1yGLBukJmgD/i16BWkiMs2gCLj0Pg4ynXF7OJnDfBRkvqlRie2ia39EqWcYTeYNbczrfxYa/+K8g2VCLcb6OoRBjvJBMovAscvsBGRumvYyCNlMy+wsyRRl1uHTfXiQ2b+aVE9WscQygu5kOetq4jRMb2ZxWG+h/YOy5HsLed4siINfGBTKkM6hDdA85H/YnoMaoAnIpEqy8K48vQbI9GFgAzRLMs0GiKre/hGUrx3oX1tonmZRtX0HHmT2H37NKJShuv40sBvWvZSwtGmUVxbAxO5LNM2SJIw8bPRbbtayV/udiXG1OUnjGT8TBlxNJiAz9b5FVx7b1eSYrkuTXk16bTQLQhf30eNqMmMyGbpXB1iRYjwxuR2v0o5YOsicOkYFKcBUEZDpIwRk+gizJTPAL0VApo8QkOkbAP8BGEgVw1zJP4cAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,392.8" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                              <TryCatch.Try>
+                                                <uix:NGetText DisplayName="Preluare Pret" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_20" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                                                  <uix:NGetText.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.dedeman.ro/ro/chit-de-rosturi-gresie-si-faianta-ceresit-ce-33-gri-interior-2-kg/p/5003299?k=ce33&amp;apn=1&amp;pn=1&amp;idc=1070&amp;pip=0&amp;osa=1&amp;upf=1" DesignTimeRectangle="769, 545, 78, 55" FriendlyName="'61.90'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' idx='1' /&gt;" FuzzyAccuracy="0.47" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' aaname='' /&gt;" Guid="9fa3bbc5-3438-4787-bdab-2c9039a8a47e" ImageBase64="" InformativeScreenshot="0c1f6802efef27c7019eeb245bf99bea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dedeman - Chit de rosturi gresie si faianta Ceresit CE 33, gri, interior, 2 kg - Dedicat planurilor tale' /&gt;" SearchSteps="FuzzySelector">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="852, 564, 66, 32" FriendlyName="'lei/sac'" FullSelectorArgument="&lt;webctrl aaname='lei/' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='lei/' type='' parentid='app' tag='DIV' check:text='lei/sac' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAkCAYAAAA0EkzVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARSSURBVGhD7ZfPa9tIFMf3f/JJB4OhEMihvliXCAoxezGFCgoVCyty6cWoEIQPJofgQvFlhaE4h+BAyKHghaA9BBcKDhQXAjosCAKCPQgM332jGcn6NbYSGjYL+oIgeZ6ZN/OZmffe/IJaparBSFSDkagGI1ENRqIajEQ1GIlqMBIVwCwGDTQaOqZ/C8Nj5S/hXi/hr8X//zM9GRg+TgP6uS8s5fLPdGqnwLoOheV56MnA+Oc6lKaG0ddtC/bgHJK/po3FMztZT3eVqujOQZdOVft0KQzPR/8pmOXHNvlqY/RNGJ6RHgYmWGI2MKDtK9SG2r1Q0Tsawy0JIzx2NGDfCENe6yVGL2mMVw5WwhRpHWD1ZQzztYoW8yH8aO8sOF9WCHJXLvgxh9OnOXVavC3Fq70DA/bFCtJLHKww/2Sil+tjTRYIRJPqYLwZjBfstxa6RzaGJ0PYR10++Sa190Q7oZ1gvo3Qpt+7k3THkPyrUb/WoQmbfHA/PajM96FDUSml0IXVJHu0QXxOwxMLutg49WPJFU3WQT46PZjHfHy22coHN4FZDcx6JYIk2e+ELdbdFDqbXGeEZWo3d4FZDNjku3DS48Ux53gzwUTrEME/4u+UfM9DmA/c7DR22DoszNMDJXYV9l/x2UgpNU4lMOG1BYUmbFyUDEZanrJYoWQgbAUT7/SbKTK38MaO+vQ+547fI8TjlwbnhzCQ4nVUCfaVwCxO2O72CtclVgxBP9sscxsYKejgCu8ZMDqZzm35JlRVmX++Ngr2t8KwRRXA+Ji+YbbdXzUwIeZ91t7A7F6YUvL/tKExONSXxZlxScDN6J4C6cSmYK1BO9iLgKfntPEfr0PHbHvNGekBYLowRTCUfc7NZpelYO4p+LFJ/36VZICCWNY41bEnADWoUDQ/uYXnhXduiOC/B70/xPhsTs8QN/rGv/G+RTBUTArLNj0ATPZ67ZIMTHBhkL3iEyBO3Qc8yyhvp/BiON/HUBmUjg23hDBfRxkYE1cVbmmlGOMeM1s2uO5SORgxuaYFtwKXRGsfsyMGR8HwKzd5n3vR+OZl+Sr5nLP+ue2nxZhNsFT6c3nRlFMpGJGOlUGVw5yTyFjxo5RnneKJjBQXj7nfg0szsv20rJTUMbRj+h/lFWV452diRhkYb9Il22OeACHttng+iN1OFpmveej6uaJIzPtHuMBwWx0TbkaqBobJo1QaDUo7vk+BmCpGFnCtdxqvSnNBrQiG4L6idi+zhWBGN0MqzTUYFEg3QZ0yziEv3VU6acnUk0VSOf/WEm1F1duxMJu8z/nnCr87vCBl/X4V1XX8pEjVVdXBMNFddycWjHRaTN4xVIGKZkwFMLf8CdAuK9Nj3S/4uyeTdltQX7O0nR0/Er3dpv1ukr2UfYI6mGHFKmRvil7af1r5Nx+DxN5Xl5vbUABTi6sGI1ENRqIajEQ1GIlqMBLVYCSqwUhUg5GoBlMq4F+gvqX2AHky0wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NGetText.Target>
+                                                  <uix:NGetText.Text>
+                                                    <OutArgument x:TypeArguments="x:String">[Pret]</OutArgument>
+                                                  </uix:NGetText.Text>
+                                                </uix:NGetText>
+                                              </TryCatch.Try>
+                                              <TryCatch.Catches>
+                                                <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="400,228" sap2010:WorkflowViewState.IdRef="Catch`1_15">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                                                    </ActivityAction.Argument>
+                                                    <uix:NGetText DisplayName="Preluare Pret" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Timeout="5" Version="V1">
+                                                      <uix:NGetText.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.dedeman.ro/ro/chit-de-rosturi-gresie-si-faianta-ceresit-ce-33-gri-interior-2-kg/p/5003299?k=ce33&amp;apn=1&amp;pn=1&amp;idc=1070&amp;pip=0&amp;osa=1&amp;upf=1" DesignTimeRectangle="769, 545, 78, 55" FriendlyName="'61.90'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' idx='1' /&gt;" FuzzyAccuracy="0.47" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' aaname='' /&gt;" Guid="9fa3bbc5-3438-4787-bdab-2c9039a8a47e" ImageBase64="" InformativeScreenshot="9c2e70c2624e8e1ad6e304043852edbc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dedeman - Chit de rosturi gresie si faianta Ceresit CE 33, gri, interior, 2 kg - Dedicat planurilor tale' /&gt;" SearchSteps="FuzzySelector">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target DesignTimeRectangle="852, 564, 104, 32" FriendlyName="'lei/bucata'" FullSelectorArgument="&lt;webctrl aaname='lei/' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='lei/' type='' parentid='app' tag='DIV' check:text='lei/bucata' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                                              <uix:Target DesignTimeRectangle="829, 117, 45, 21" ElementType="Text" FriendlyName="'Ajutor'" FullSelectorArgument="&lt;webctrl aaname='Ajutor' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Ajutor' tag='A' type='' check:text='Ajutor' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAZCAYAAACYY8ZHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJfSURBVFhH7ZZBSxtBGIb7V/I/8if6B3orBHKzZ0G85CJ6MQHRS0MvWcR4MoGQgNgFyYIkYUUTWGxKZGDJkgSXXt9+MzuzO9lsrd2KrpjDC5mZb76ZZ+b9ZvMh97GCt641RFa0hsiK3iuEBXP2C/7PGxQTx19eiRD5Mwbfp40uJjgsxMffBEQdhsMBSARinVRj4+lVvqaco37i2P9oFWLzBkPaPOvaMKfBovl4TCpdhvmSx9NrBaJ44dENzNE+qKB09UC/XRibekwfA24118GWaJ+j7ertQFvdubjJwRm1d2wMOACfp6TFf6o5GPIccsxjDMa+5gBhb9rTUQfGbZBXP4wYRAuNewq4H+ELbx84YDRh2KlrMSkgCnV8ro1FLt+hWtppoliqixvOH0/giXwu2h0bhsnAhJU9NPZkPlmjzKVDXcwxvGWwWufhWssQctM/LpqyL4KKijgFBO+TuZftJOtP3zApfzIRc73eZdCnHprpBOWNKE5pCSKwD08al77Ic0Ikz80VbFGX4eGpm+hGp69Lg/geFN7Uw4CuK9TIE9cdJcgyBHmTB0ZWUlJwY5RE+w8QPkM1/KYomzyvnf4CUcUhf8NjyZR2e9xmDzC/8nYcQr7/fBHHwWnTRkO9IKQQQs1beDBFAffFoeSPJNzMlf2PFPajEIUrWHxi/FqVvo2DF+TaovYqRG7bQvsuqifvzkH5ONhcBEFPKZ1wsEHSjP4NqP7aCAOmzU98Yp9ipycrAeKV9d4gWtglv5/2+BedIIS1kuJeXv8AIW+Ai5Gft5NiXkcp7JQ9rSGyoQp+A1TMNwg75MMnAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                              <uix:Target DesignTimeRectangle="852, 549, 104, 15" ElementType="Text" FriendlyName="'TVA inclus'" FullSelectorArgument="&lt;webctrl aaname='TVA inclus' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='TVA inclus' tag='SPAN' type='' check:text='TVA inclus' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAATCAYAAAB1EujZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJ4SURBVGhD7ZZNjuIwEIW5E1eY68BubjB71HOLAdEQtYBGLMIiQiB+ekJW3ZFIpGYB6vB3gjcuYwfHSeiwYiLypFIcu2yK99mGUhAEuHfsdjse+/2ex+FwgOd5aDQaKBTV3YFJWBIYwToej/B9vwCWoLsBU0FJWAWw71XSjbtH6LAoVqsVms2mKLOQ1N2ASUgqLAnsdDphuVyi1+uJMjW91VB+ssXLY6kkDQvWLhzHSYyPdwfeJmowxcZj495G6dvAY/lJuWF8fcJ1XHx+XSCpJ4tgUV6n08FkMhFlanpkYKppMra+A3cdhO8cpr+N5BwOW/jM+HVw6aM8103KTQ8JSsKi37fhcMiB2XYKlEcGtlgsoMd0ZMIaz5W+KUbmCFMlZzEdwbTGmId9c4wtC+OZfCq5kVDXYm22xnRswTRNDAYDtFpt9NmTTvZsNkNgVFEul0VU0d6yqhVgfFyDZz+VUXsTL5QbzmdRaSMQQ3lUqd/vQ4+uUcfzy+vVvlhOx0Dd6PL268tzbP4lujDqBrph+7KOxUCbzd/48avFYf3985OZXEPsLGUGZqOWND/HKolnRPSFq4a2D8mkcHfGjYjs6qtGqWPUFqdGSvmcxDpImYEFaFdS1sipsgNTzI2bRGPKtSPiAlCVDkwDGwI7m524RmZgZ/Ecqinn1yHpBmCy344ZSYYknkjNyLOyAkuv4zqwb0DnHNpNwLBto1phcCImk0HatcZFMNL6swHjbX2cpACL5fD3FGC8/kcCJnZvZEerBmtKuq5uAsYUXmc84v8SSVRvmMPm2mzOGRitr4wlbqB8KRFYof9XBbCcqQCWMxXAcqYCWK4E/AMpyJgqnpmBLgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NGetText.Target>
+                                                      <uix:NGetText.Text>
+                                                        <OutArgument x:TypeArguments="x:String">[Pret]</OutArgument>
+                                                      </uix:NGetText.Text>
+                                                    </uix:NGetText>
+                                                  </ActivityAction>
+                                                </Catch>
+                                              </TryCatch.Catches>
+                                            </TryCatch>
+                                            <uix:NGetUrl CurrentUrl="[Site]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="433.6,87.2" sap2010:WorkflowViewState.IdRef="NGetUrl_4" Version="V1" />
+                                            <uix:NGetText DisplayName="Get Text 'Chit de'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="b3120c70-4657-4e03-9f25-352c3754cbcb" Version="V1">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://www.dedeman.ro/ro/chit-de-rosturi-gresie-si-faianta-ceresit-ce-40-alb-interior/-exterior-2-kg/p/7002795?k=ce40&amp;apn=1&amp;pn=1&amp;idc=1070&amp;pip=0&amp;osa=1&amp;upf=1" DesignTimeRectangle="235, 362, 1448, 65" FriendlyName="'Chit de'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="56f23e4f-0ecf-415e-96ad-8be510c24bf9" InformativeScreenshot="bc973bf3400aa5f4889754642b2e6cd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dedeman - Chit de rosturi gresie si faianta Ceresit CE 40, alb, interior / exterior, 2 kg - Dedicat planurilor tale' /&gt;" SearchSteps="FuzzySelector">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="255, 117, 238, 79" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' aaname='Dedeman' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NGetText.Target>
+                                              <uix:NGetText.Text>
+                                                <OutArgument x:TypeArguments="x:String">[Descriere]</OutArgument>
+                                              </uix:NGetText.Text>
+                                            </uix:NGetText>
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Produs.item(0),Descriere,Pret,&quot;Dedeman&quot;,Site}]" DataTable="[DT_OutputProduse]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                          </Sequence>
+                                        </TryCatch.Try>
+                                        <TryCatch.Catches>
+                                          <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="478.4,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ActivityAction x:TypeArguments="si:IOException">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                                              </ActivityAction.Argument>
+                                            </ActivityAction>
+                                          </Catch>
+                                          <Catch x:TypeArguments="uue:NodeNotFoundException" sap:VirtualizedContainerService.HintSize="478.4,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ActivityAction x:TypeArguments="uue:NodeNotFoundException">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
+                                              </ActivityAction.Argument>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="200,85.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </Catch>
+                                        </TryCatch.Catches>
+                                        <TryCatch.Finally>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="200,85.6" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </TryCatch.Finally>
+                                      </TryCatch>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="760, 1431, 1938, 1098" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="c24ed50a44649e096c1fd803d4620322.png" Selector="&lt;html app='chrome.exe' title='Dedeman Magazin Online - Dedicat planurilor tale'/&gt;" Url="https://www.dedeman.ro/ro" />
+                                </uix:NApplicationCard.TargetApp>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                    <FlowStep.Next>
+                      <FlowStep x:Name="__ReferenceID3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">190,504.4</av:Point>
+                            <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">290,557.2 290,575.6</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="Produs" DataTable="[DT_OutputProduse]" DisplayName="Sortare produse dupa nume" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[DT_OutputProduse]" SortOrder="Ascending">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:SortDataTable>
+                        <FlowStep.Next>
+                          <FlowStep x:Name="__ReferenceID5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">190,575.6</av:Point>
+                                <av:Size x:Key="ShapeSize">200,68.8</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">290,644.4 290,663.6</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="Verificare cel mai avantajos pret" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:Int32" Default="0" Name="i" />
+                                <Variable x:TypeArguments="x:Int32" Default="0" Name="j" />
+                                <Variable x:TypeArguments="x:Int32" Name="Test" />
+                                <Variable x:TypeArguments="x:Int32" Name="n" />
+                                <Variable x:TypeArguments="x:Int32" Name="Pozitie" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="410.4,60" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[n]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[DT_OutputProduse.RowCount-1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="410.4,865.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
+                                <ui:InterruptibleDoWhile.Body>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,698.4" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="333.6,405.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                                      <ui:InterruptibleWhile.Body>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="283.2,238.4" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="241.6,145.6" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <If Condition="[DT_OutputProduse.Rows(J).Item(0).ToString=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="If_7">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If.Then>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="472,224.8" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                                    <ui:MultipleAssign.AssignOperations>
+                                                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                                          <ui:AssignOperation.To>
+                                                            <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                                                          </ui:AssignOperation.To>
+                                                          <ui:AssignOperation.Value>
+                                                            <InArgument x:TypeArguments="x:Int32">[n+1]</InArgument>
+                                                          </ui:AssignOperation.Value>
+                                                        </ui:AssignOperation>
+                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                                          <ui:AssignOperation.To>
+                                                            <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                                                          </ui:AssignOperation.To>
+                                                          <ui:AssignOperation.Value>
+                                                            <InArgument x:TypeArguments="x:Int32">[n+1]</InArgument>
+                                                          </ui:AssignOperation.Value>
+                                                        </ui:AssignOperation>
+                                                      </scg:List>
+                                                    </ui:MultipleAssign.AssignOperations>
+                                                  </ui:MultipleAssign>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="1083.2,956.8" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <If Condition="[DT_OutputProduse.Rows(I).Item(0).ToString=DT_OutputProduse.Rows(J).Item(0).ToString]" sap:VirtualizedContainerService.HintSize="1041.6,864" sap2010:WorkflowViewState.IdRef="If_6">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <If.Then>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="693.6,704.8" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                                        <Sequence.Variables>
+                                                          <Variable x:TypeArguments="x:Double" Default="5.32" Name="V1" />
+                                                          <Variable x:TypeArguments="x:Double" Name="V2" />
+                                                        </Sequence.Variables>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="652,60" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Double">[V1]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:Double">[Double.Parse(DT_OutPutProduse.rows(i).item(2).toString)]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="652,60" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Double">[V2]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:Double">[Double.Parse(DT_OutPutProduse.rows(j).item(2).toString)]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <If Condition="[V1&lt;=V2]" sap:VirtualizedContainerService.HintSize="652,412" sap2010:WorkflowViewState.IdRef="If_5">
+                                                          <If.Then>
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="304,252.8" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:Int32">[Pozitie]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:Int32">[i]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:Int32">[j+1]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </Sequence>
+                                                          </If.Then>
+                                                          <If.Else>
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="304,252.8" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:Int32">[Pozitie]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:Int32">[j]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:Int32">[j+1]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </Sequence>
+                                                          </If.Else>
+                                                        </If>
+                                                      </Sequence>
+                                                    </If.Then>
+                                                    <If.Else>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="304,352.8" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:Int32">[j]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:Int32">[j+1]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Object">[DT_OutputProduse.Rows(Pozitie).Item(5)]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">["Cel mai avantajos pret pentru produsul "]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                      </Sequence>
+                                                    </If.Else>
+                                                  </If>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                          </Sequence>
+                                        </Sequence>
+                                      </ui:InterruptibleWhile.Body>
+                                      <ui:InterruptibleWhile.Condition>
+                                        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="j&lt;=n" />
+                                      </ui:InterruptibleWhile.Condition>
+                                    </ui:InterruptibleWhile>
+                                    <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:InterruptibleDoWhile.Body>
+                                <ui:InterruptibleDoWhile.Condition>
+                                  <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;=n-1" />
+                                </ui:InterruptibleDoWhile.Condition>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:InterruptibleDoWhile>
+                            </Sequence>
+                            <FlowStep.Next>
+                              <FlowStep x:Name="__ReferenceID4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">190,663.6</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:WriteRange AddHeaders="False" DataTable="[DT_OutputProduse]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Output" StartingCell="A1" WorkbookPath="bricolaje.xlsx">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:WriteRange>
+                              </FlowStep>
+                            </FlowStep.Next>
+                          </FlowStep>
+                        </FlowStep.Next>
+                      </FlowStep>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>
